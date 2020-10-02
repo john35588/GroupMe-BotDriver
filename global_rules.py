@@ -7,7 +7,11 @@ def run(data, bot_info, send):
     if message == '.help':
         send(help_message, bot_info[0])
         return True
-
+    
+    if message == 'Hey Jay!':
+        send("Hi @John Wendel", bot_info[0])
+        return True    
+    
     if message == '.test':
         send("Hi there! Your bot is working, you should start customizing it now.", bot_info[0])
         return True
